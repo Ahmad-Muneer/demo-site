@@ -1,0 +1,322 @@
+
+/* Base Rule */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+html {
+    font-size: 62.5%;
+    /*1rem = 10px*/
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Poppins", sans-serif;
+}
+p, li, a {
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color: var(--para-color);
+   /* padding: 1rem; */
+}
+a {
+    text-decoration: none;
+    
+}
+li {
+    list-style: none;
+}
+
+.fa-solid {
+    font-size: 1.8rem;
+}
+                                                /* Theme */
+:root {
+    --main-color: black;
+    --font-color: #424242;
+    --para-color: #504e4d;
+    --supporting-color: #ebf3fe;
+    --btn-color : blue;
+    --white-color: white;
+    --btn-text-color: rgb(27, 134, 221);
+    --icon-color1: green;
+    --icon-color2: rgb(18, 240, 18);
+    --footer-color: #cdced3;
+    --header-color: #d0d1d9;
+
+
+
+
+
+
+}
+
+
+
+/* Layout */
+.container {
+    max-width: 142rem;
+    margin: 0rem auto;
+    padding: 9.6rem 2.4rem;
+}
+.grid {
+    display: grid;
+}
+.grid-two--cols{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+.grid-two--cols .navbar-logo{
+    align-items: end;
+}
+.list-container {
+    max-width: 142rem;
+    margin: 0rem auto;
+    margin-left: 12%;
+}
+.grid-three--cols {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-right: 15rem;
+}
+.grid-four--cols {
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: 10%;
+    margin-left: 10%;
+    gap: 2rem;
+}
+
+
+
+
+
+
+/* Reuseable */
+
+.btn {
+    padding: 0.8rem 0.8rem;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    font-size: 1.5rem;
+    border-radius: 10%;
+    cursor: pointer; 
+    margin-top: -0.7rem;  
+}
+.buton {
+    padding: 0.8rem 0.8rem;
+    color: var(--white-color);
+    background-color: var(--btn-text-color);
+    font-size: 1.5rem;
+    border-radius: 10%;
+    border: 0.1rem solid var(--btn-text-color);
+    cursor: pointer; 
+}  
+
+.bton {
+    
+    padding: 0.8rem 0.8rem;
+    color: var(--btn-color);
+    background-color: var(--white-color);
+    border: 0.1rem solid var(--btn-color);
+    font-size: 1.5rem;
+    border-radius: 10%;
+    cursor: pointer;
+    margin-top: 0.4rem;
+    margin-left: 16rem;
+}
+
+
+
+
+
+
+/* States */
+
+/****** Nav Bar ****/
+    .nav-bar{
+        width: 100%;
+       /* border: 1px solid var(--main-color);*/
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    }
+.nav-bar .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0;
+   
+}
+/*.container {
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1); } */
+
+.nav-bar .container ul {
+    display: flex;
+    gap: 3.2rem;
+    text-transform: capitalize;
+}
+    & li {
+        color: var(--main-color);
+        font-weight: 600;
+        
+}
+
+/****** Nav Bar ****/
+/****** Home Section ****/
+
+.section-home .grid{
+    align-items: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    
+    & .home-subheading {
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        font-size: 2.0rem;
+        word-spacing: 0.2rem;
+}
+    & .home-heading {
+        font-size: 2.9rem;
+    }
+}
+.section-home{
+    background: rgb(158,173,251);
+    background: radial-gradient(circle, rgba(158,173,251,1) 0%, rgba(254,254,254,1) 28%);
+}
+
+
+
+.section-home .home-section-image {
+    width: 100%;
+    height: auto;
+}
+.home-section-image .image {
+    width: 80%;
+    height: auto;
+}
+
+/****** Home Section ****/
+/****** Chain Liis Section ****/
+.table {
+    
+    border-collapse: collapse;
+
+}
+th, td {
+   /** border: 0.2rem solid black;**/
+    text-align: center;
+    padding: 0.4rem;
+    width: 28%;
+}
+.main{
+    border: 0.1rem solid var(--main-color);
+    width: 30%;
+    padding-top: 1rem;
+}
+.section-heading {
+    font-size: 3.5rem;
+    width: 80%;
+    height: auto;
+    margin-left: 17rem;
+
+    
+}
+.list-box {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+
+
+td {
+    font-weight: 800;
+}
+th{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+#icon-tick1{
+    color: var(--icon-color1);
+}
+#icon-tick2{
+    color: var(--icon-color2);
+}
+.fa-solid .fa-link {
+    color: var(--btn-text-color);
+}
+.link {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+.btn1 {
+    color: var(--main-color);
+    background-color: var(--supporting-color);
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;  
+}
+
+.card {
+    box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+}
+
+
+/****** Chain List Section ******/
+/****** Footer Section ******/
+
+.main-logo{
+    width: 30%;
+    height: auto;
+}
+.footer-subheading{
+    font-weight: 900;
+}
+footer {
+    background-color: var(--footer-color);
+}
+.footer-4--cols, ul, li {
+    font-weight: 400;
+}
+.footer-4--cols .fa-solid {
+    align-items: center;
+    padding: 0.5rem;
+}
+.social-footer--icons{
+
+    display: flex;
+    gap: 2rem;
+    & .fa-brands {
+        width: 5rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: var(--white-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s linear;
+
+        &:hover{
+            background-color: var(--btn-color);
+            rotate: 360deg;
+            color: var(--white-color);
+        }
+    }
+}
+.footer-1--cols p{
+    margin: 1rem 0 3rem 0;
+}
+.grid-four--cols li {
+    padding: 1rem;
+}
+/****** Footer Section ******/
